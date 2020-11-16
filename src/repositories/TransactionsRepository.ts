@@ -9,7 +9,7 @@ interface Balance {
 interface TransactionDTO {
   title: string;
   value: number;
-  type: string;
+  type: 'income' | 'outcome';
 }
 
 class TransactionsRepository {
@@ -21,11 +21,13 @@ class TransactionsRepository {
 
   public all(): Transaction[] {
     // TODO
+    return this.transactions;
   }
 
-  public getBalance(): Balance {
-    // TODO
-  }
+  // public getBalance(): Balance {
+  // TODO
+  // return this.balance
+  // }
 
   public create({ title, type, value }: TransactionDTO): Transaction {
     // TODO
