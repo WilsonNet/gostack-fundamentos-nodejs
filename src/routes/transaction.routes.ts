@@ -7,7 +7,7 @@ const transactionRouter = Router();
 
 // const transactionsRepository = new TransactionsRepository();
 
-transactionRouter.get('/', (request, response) => {
+transactionRouter.get('/transactions', (request, response) => {
   try {
     // TODO
   } catch (err) {
